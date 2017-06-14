@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  phpfpm:
+    image: 'mrduong92/phpadminer'
+    ports:
+      - '8080:80'
+    volumes:
+      - ./etc/nginx/sites-available:/etc/nginx/sites-available
